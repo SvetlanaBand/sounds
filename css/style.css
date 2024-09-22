@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(177, 171, 171);
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    font-size: 22px;
+}
+  .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 20px;
+      height: 60px;
+  }
+  a {
+      padding-left: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+  }
+  .logo {
+      width: 50px;
+      height: 50px;
+  }
+  .footer {
+      margin: 0 20px;
+  }
+  .footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.github {
+    color: white;
+    text-decoration: none;
+}
+.flex>div {
+    padding-left: 30px;
+}
+.birds {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.rs {
+    height: 50px;
+    width: 130px;
+}
+li {
+    cursor: pointer;
+}
+    .main {
+        display: flex;
+        align-items: center;
+        height: calc(100vh - 120px);
+        min-height: 300px;
+        background-image: url(../img/ptica_na_vetke.png);
+        background-size: cover;
+        width: 90%;
+        margin: 0 auto;
+        transition: 1s;
+}
+.play:hover {
+    transform: scale(1.1);
+    border: 4px solid rgb(99, 85, 9);
+    color:rgb(99, 85, 9);
+}
+.play {
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-size: 26px;
+    background-size: contain;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: .3s;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+      transition: .3s;
+    }
+a:hover {
+    color: rgb(99, 85, 9);
+    transition: .5s;
+}
+.active {
+    color: rgb(163, 141, 12);
+    transition: .5s;
+    font-weight: bold;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .viev {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .viev__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-left: 0px;
+  }
+  .viev__item {
+    background-color: rgb(231, 166, 182);
+    text-align: center;
+    height: 40px;
+    flex: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(234, 112, 143);
+    display: flex;
+    align-items: center;
+  }
+  .viev__item a {
+    margin: 0 auto;
+    font-size: 18px;
+    padding-left: 0px;
+  }
+  .score {
+    margin: 0 auto;
+    color: white;
+    width: 10%;
+  }
+  .saunds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .saunds__image {
+    width: 30%;
+  }
+  .saunds__image img{
+    width: 300px;
+  }
+  .saunds__player {
+    display: flex;
+    flex-direction: column;
+  }
+  .saunds__player-item p {
+    color: white
+  }
+  .btm {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    border-radius: 50%;
+    transition: .1s;
+    background-color: white;
+  }
+  .list__choice {
+    width: 50%;
+  }
+  .list {
+    background-color: rgb(231, 166, 182);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .list__info p {
+    color: white;
+  }
+  .list__choice-items {
+    list-style-type: none;
+  }
+
+  .list__choise-item::before {
+    content: "✓"; /* Добавляем символ */
+    padding-right: 7px; /* Расстояние от текста до маркеров */
+    color: rgb(50, 44, 44); /* Красный цвет маркеров */
+   }
+   .list__choise-item.active::before {
+    color:rgb(27, 25, 25)
+   }
+   .list__choise-item.red::before {
+    color:rgb(249, 22, 22);
+    text-decoration: line-through;
+   }
+  .button {
+    margin: 0 auto;
+    color: white;
+    background-color:rgb(231, 166, 182);
+    border: 2px solid rgb(234, 112, 143);
+    border-radius: 10px;
+    width: 180px;
+  }
+  .next {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .shou {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+  }
+  .shou__play {
+    display: flex;
+    flex-direction: row;
+  }
+  .shou__play-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .shou__play-img {
+    width: 30%;
+    border-radius: 10%;
+    margin-top: 30px;
+  }
+  .shou__play-audio {
+margin-top: 30px;
+  }
+  .shou__play-sounds {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+  .shou__play-name {
+    min-width: 180px;
+  }
+  #img {
+    border-radius: 10%;
+  }
+  .play-game {
+    padding-left: 0px;
+  }
+  @media screen and (max-width: 1100px){
+    .saunds {
+        flex-direction: column;
+        align-items: center;
+    }
+    .list__choice-items,
+    .shou__text {
+        font-size: 16px;
+    }
+    audio {
+        width: 200px;
+        height: 30px;
+    }
+    .flex>div {
+        padding-left: 00px;
+    }
+    .thrush {
+        padding-left: 5px;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .shou {
+        width: 90%;
+    }
+    .github,
+    .birds a,
+    .data {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+   .footer-items {
+    flex-direction: column;
+    align-items: center;
+   }
+   .viev__item a {
+    font-size: 15px;
+   }
+   .saunds__image img {
+    width: 180px;
+    margin: 0 auto;
+   }
+   .viev__item {
+    width: 30%;
+   }
+   .viev__list {
+    flex-wrap: wrap;
+    padding-left: 0px;
+   }
+   .saunds__image img {
+    width: 120px;
+   }
+   .flex {
+    flex-direction: column;
+   }
+   .main {
+    width: 100%;
+   }
+   .play {
+    width: 90px;
+    height: 90px;
+   }
+   .play a{
+    font-size: 16px;
+    line-height: 1.1;
+   }
+  }
